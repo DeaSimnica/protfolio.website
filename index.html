@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-    <h1>Hello, I'm Dea</h1>
-    <p>This is my portfolio website</p>
+  <nav id="desktop-nav">
+    <div class="logo">Dea Simnica</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About </a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Dea Simnica</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__text">
+      <p class="section__text__p1">Hello I'm</p>
+      <h1 class="title">Dea Simnica</h1>
+      <p class="section__text__p2">
+        A passionate beginner web developer currently exploring the world of web design and development.
+        I enjoy building simple and clean websites using HTML, CSS, and JavaScript.
+        I'm focusing on mastering the fundamentals of web development and creating projects that help me apply what I learn.
+      </p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'"/>
+        <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/'"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get to know more</p>
+    <h1 class="title">About Me</h1>
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/experience.png" alt="" class="icon" />
+          <h3>Experience</h3>
+          <p>Currently gaining hands-on experience by creating projects and following tutorials to strengthen my web development skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="projects-container">
+    <div class="project-card">
+        <img src="./assets/project-1.png" alt="" class="project-img">
+        <h3>Portfolio website</h3>
+        <p>A simple personal portfolio built using HTML, CSS, and JavaScript.</p>
+        <a href="#" class="project-btn" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <img src="./assets/project-2.png" alt="" class="project-img">
+        <h3>Weather app</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <a href="#" class="project-btn" target="_blank">View Project</a>
+    </div>
+
+     <div class="project-card">
+        <img src="" alt="" class="project-img">
+        <h3>Weather app</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <a href="#" class="project-btn" target="_blank">View Project</a>
+    </div>
+
+     <div class="project-card">
+        <img src="" alt="" class="project-img">
+        <h3>Weather app</h3>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+        <a href="#" class="project-btn" target="_blank">View Project</a>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html>
+</html> 
+
+
+
