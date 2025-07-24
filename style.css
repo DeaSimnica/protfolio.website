@@ -317,7 +317,7 @@ section {
 .project-btn {
     display: inline-block;
     padding: 0.6rem 1.2rem;
-    background-color: #333;
+    background-color: #a53487;
     color: #fff;
     border-radius: 20px;
     text-decoration: none;
@@ -326,7 +326,7 @@ section {
 }
 
 .project-btn:hover {
-    background-color: #555;
+    background-color: #bd3c9b;
 }
 
 .project-img {
