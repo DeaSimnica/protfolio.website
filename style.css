@@ -287,7 +287,6 @@ section {
 
 }
 
-/* Each slideshow stays fixed size */
 .slideshow {
   position: relative;
   width: 850px;
@@ -296,7 +295,6 @@ section {
   overflow: hidden;
 }
 
-/* Each slide stays full height */
 .project-slide {
   position: absolute;
   top: 0;
@@ -313,7 +311,6 @@ section {
   pointer-events: auto;
 }
 
-/* Fix card to fill full slideshow height */
 .project-card {
   display: flex;
   background-color: #f7f1f6;
@@ -327,7 +324,6 @@ section {
   box-sizing: border-box;
 }
 
-/* Alternate layout in slideshow */
 .slideshow .project-slide:nth-child(even) .project-card {
   flex-direction: row-reverse;
 }
@@ -372,18 +368,15 @@ section {
 .project-img {
   width: 550px;
   height: 100%;
-  object-fit: cover; /* Change from contain to cover for consistent sizing */
   border-radius: 15px;
 }
 
-/* Button row: View + Next */
 .button-row {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-/* Inline circular button */
 .next-inline {
   background-color: #a53487;
   color: white;
@@ -433,7 +426,6 @@ section {
   cursor: default;
  }
 
- /* Responsive Styling */
 @media (max-width: 900px) {
   .project-card {
     flex-direction: column;
