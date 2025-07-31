@@ -185,7 +185,7 @@ section {
 }
 
 .section__text__p2 {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -236,7 +236,7 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: rgb(145, 142, 142);
   color: white;
 }
 
@@ -289,9 +289,9 @@ section {
     display: flex;
     background-color: #f7f1f6;
     padding: 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     border-radius: 15px;
-    width: 800px; 
+    width: 850px; 
     height: 400px;
     box-shadow: 0 6px 20px rgba(0, 0 ,0, 0.1);
     align-items: center; 
@@ -339,3 +339,36 @@ section {
 .project-card:nth-child(even) {
     flex-direction: row-reverse;
 }
+
+ #contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 40vh;
+ }
+
+ .contact-info-parent-container{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  border-radius: 2rem;
+  border-color: #555;
+  background: #fff;
+  margin: 2rem auto;
+  padding: 0.5rem;
+ }
+
+ .contact-info-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+ }
+
+ .contact-info-container p{
+  font-size: larger;
+ }
+
+ .contact-icon {
+  cursor: default;
+ }
